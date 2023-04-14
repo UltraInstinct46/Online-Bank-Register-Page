@@ -1,47 +1,70 @@
-body{
+body {
     background-color: #F2E3DB;
-}
-label, button{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  label,
+  button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 11pt;
-}
-form{
+  }
+  
+  form {
     background-color: #fff;
-    width: 75%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 1000px;
+    max-width: 1000px; /* set a max-width to prevent overflow on smaller screens */
+    margin: 0 auto; /* center the form horizontally */
+    position: fixed; /* use fixed positioning */
+    top: 50%; /* position the form from top 50% of viewport */
+    left: 50%; /* position the form from left 50% of viewport */
+    transform: translate(-50%, -50%); /* use translate to center the form exactly */
     border-radius: 20px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-}
-.container{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    height: 650px; /* adjust height as needed */
+  }
+  
+  .container {
     height: 100%;
-}
-.transparent{
+  }
+  
+  .transparent {
     background-color: transparent;
-}
-.form-control{
+  }
+  
+  .form-control {
     position: relative;
-}
-.input-group-text{
+  }
+  
+  .input-group-text {
     background: transparent;
     border: none;
     outline: none;
-}
-.img-fill{
-    width: 100%;
-    height:700px;
+  }
+  
+  .img-fill {
+    width: 630px;
+    height: 650px;
     border-radius: 20px 0px 0px 20px;
-}
-.padding{
-padding-left:0px;
-}
-.form-group{
-    margin-bottom: 2px;
+  }
+  
+  .padding {
+    padding-left: 0px;
+  }
+  
+  .form-group {
+    height: 60px;
+    
     border-radius: 5px;
-}
-.alert-text{
+  }
+  
+  .alert-text {
     color: #fff;
     visibility: hidden;
-}
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    form {
+      width: 90%; /* adjust width for smaller screens */
+      max-width: none; /* remove max-width on smaller screens */
+    }
+  }
